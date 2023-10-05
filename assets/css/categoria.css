@@ -1,0 +1,41 @@
+.categorias{
+    padding: 26px;
+    box-sizing: border-box;
+}
+
+.categorias__titulo{
+    font-family: var(--font);
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+
+.categorias__categoria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.categoria__card{
+    width: 146px;
+    height: 197px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria__card .categoria__descrição{
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--color-black);
+    padding: 8px 16px;
+    color: var(--color-offwhite);
+    margin-top: -2px;
+    display: flex;
+    justify-content: center;
+}

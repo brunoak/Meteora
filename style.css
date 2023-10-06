@@ -1,6 +1,7 @@
 @import url(assets/css/header.css);
 @import url(assets/css/carroussel.css);
 @import url(assets/css/categoria.css);
+@import url(assets/css/produtos.css);
 
 :root{
     --font: 'Inter', sans-serif;
@@ -11,6 +12,7 @@
     --color-azul:#75D7F0;
     --color-offwhite:#DEE2E6;
     --color-cinza:#6C757D;
+    --color-cinza-claro:#e9e9e9;
     
 }
 

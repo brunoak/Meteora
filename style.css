@@ -3,6 +3,8 @@
 @import url(assets/css/categoria.css);
 @import url(assets/css/produtos.css);
 @import url(assets/css/facilidades.css);
+@import url(assets/css/leads.css);
+@import url(assets/css/rodape.css);
 
 :root{
     --font: 'Inter', sans-serif;

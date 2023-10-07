@@ -1,0 +1,45 @@
+.leads{
+    padding: 30px;
+}
+
+.leads__borda{
+    border: 1px solid var(--color-black);
+    padding: 24px;
+}
+
+.leads__texto{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 23px;
+}
+
+.leads__formulario{
+    margin-top: 16px;
+    text-align: center;
+    height: 38px;
+    display: flex;
+}
+
+.leads__formulario__email{
+    height: 38px;
+    width: 200px;
+}
+
+.leads__formulario__email::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px; /* 143.75% */
+}
+
+.leads__formulario a{
+    display: flex;
+    width: 84px;
+    height: 38px;
+    border: 1px solid var(--color-roxo);
+    background: var(--color-roxo);
+    text-decoration: none;
+    color: var(--color-offwhite);
+    align-items: center;
+    justify-content: center;
+}

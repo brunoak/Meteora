@@ -2,6 +2,7 @@
 @import url(assets/css/carroussel.css);
 @import url(assets/css/categoria.css);
 @import url(assets/css/produtos.css);
+@import url(assets/css/facilidades.css);
 
 :root{
     --font: 'Inter', sans-serif;

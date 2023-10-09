@@ -12,7 +12,11 @@
 <body> 
     <header class="cabecalho">
         <div class="cabecalho_menu">
-            <img class="cabecalho_menu_logo" src="assets/Desktop/Logo desktop.png" alt="Logo da loja Meteora">
+            <picture>
+                <source media="(min-width: 1440px)" srcset="assets/Desktop/Logo_desktop.png" type="image/png">
+                <source media="(min-width: 768px)" srcset="assets/Tablet/Logo_tablet.png" type="image/png">
+                <img class="cabecalho_menu_logo" src="assets/Mobile/Logo_mobile.png" alt="Logo da loja Meteora">
+            </picture>
             <span class="cabecalho_menu_img"></span>
             <nav class="cabecalho_menu_desktop">
                 <ul>
@@ -22,6 +26,13 @@
                     <li><a href="#">promoções</a></li>
                 </ul>
             </nav>
+
+            <section class="cabecalho_buscar_tablet">
+                <label for="campo_input">
+                    <input type="text" name="campo_input" id="campo_input"placeholder="Digite o produto" >
+                </label>
+                <a href="#">Buscar</a>
+            </section>
         </div>
         <nav class="cabecalho_menu_mobile menu-active">
             <ul>
@@ -31,6 +42,7 @@
                 <li><a href="#">promoções</a></li>
             </ul>
         </nav>
+
     </header>
     <section class="cabecalho_buscar">
         <label for="campo_input">
@@ -40,7 +52,11 @@
     </section>
 
     <section class="carroussel">
-        <img src="assets/Mobile/Banner carousel 1 _ 375.png" alt="carousel com as fotos das modelos">
+        <picture>
+            <source media="(min-width: 1440px)" srcset="assets/Desktop/Banner_carousel_1_1440.png" type="image/png">
+            <source media="(min-width: 768px)" srcset="assets/Tablet/Banner_carousel_1_768.png" type="image/png">
+            <img src="assets/Mobile/Banner_carousel_1_ 375.png" alt="carousel com as fotos das modelos">
+        </picture>
     </section>
 
     <section class="categorias">

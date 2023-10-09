@@ -60,3 +60,28 @@
     background: var(--color-roxo);
     margin: 10px 0 0 16px;
 }
+
+@media screen and (min-width: 768px){
+
+    .produtos{
+        padding: 0 26px 26px 26px;
+        box-sizing: border-box;
+    }
+
+    .produtos__produto{
+        display: flex;
+        /* width: 330px; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-evenly;
+    }
+
+    .produtos__card{
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+
+    }
+
+}

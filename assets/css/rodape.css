@@ -14,3 +14,9 @@
     width: 246px;
     text-align: center;
 }
+
+@media screen and (min-width: 768px){
+    .rodape__texto{
+        width: 422px;
+    }
+}

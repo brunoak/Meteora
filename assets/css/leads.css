@@ -43,3 +43,32 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (min-width: 768px){
+    
+    .leads{
+        padding: 40px;
+    }
+
+    .leads__borda {
+        border: 1px solid var(--color-black);
+        padding: 35px;
+    }
+
+    .leads__texto{
+        font-size: 20px;
+        width: 570px;
+        margin: 0 auto 20px auto;
+    }
+
+    .leads__formulario{
+        justify-content: center;
+
+    }
+
+    .leads__formulario__email{
+        height: 38px;
+        width: 372px;
+    }
+
+}

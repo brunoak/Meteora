@@ -39,3 +39,11 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (min-width: 768px){
+    .categoria__card{
+        width: 209px;
+        margin-bottom: 70px;
+    }
+
+}

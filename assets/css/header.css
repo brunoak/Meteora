@@ -121,6 +121,10 @@ section.cabecalho_buscar a{
         position: static;
     }
 
+    .cabecalho_menu div {
+        display: flex;
+    }
+
     div.cabecalho_menu {
         display: flex;
         justify-content: flex-start;
@@ -182,6 +186,22 @@ section.cabecalho_buscar a{
         color: var(--color-offwhite);
         text-decoration: none;
     
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    div.cabecalho_menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cabecalho_menu div {
+        display: flex;
+        align-items: center;
+    }
+
+    .cabecalho_buscar_tablet{
+        padding-right: 23px;
     }
 }
 

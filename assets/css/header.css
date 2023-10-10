@@ -26,7 +26,8 @@ span.cabecalho_menu_img{
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
-    margin-right: 20px;
+    position: absolute;
+    right: 22px;
 }
 
 nav.cabecalho_menu_mobile{
@@ -103,6 +104,11 @@ section.cabecalho_buscar a{
 
 .cabecalho_buscar_tablet{
     display: none;
+}
+
+.cabecalho_menu div {
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -202,6 +208,12 @@ section.cabecalho_buscar a{
 
     .cabecalho_buscar_tablet{
         padding-right: 23px;
+    }
+
+    nav.cabecalho_menu_desktop ul li a{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px; /* 143.75% */
     }
 }
 

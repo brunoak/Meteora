@@ -47,3 +47,34 @@
     }
 
 }
+
+@media screen and (min-width: 684px) {
+    .categorias__categoria {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 1440px){
+    .categorias__titulo{
+        font-size: 32px;
+        margin: 40px 0 32px 0;
+    }
+
+    .categoria__card{
+        width: 160px;
+        margin-bottom: 30px;
+    }
+
+    .categorias__categoria {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 30px;
+        justify-content: center;
+    }
+}

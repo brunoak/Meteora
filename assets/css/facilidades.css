@@ -57,3 +57,30 @@
 
     }
 }
+
+@media screen and (min-width: 1440px){
+
+    .facilidades {
+        padding: 40px;
+    }
+
+    .facilidades__titulo{
+        font-size: 32px;
+        margin: 10px 0 40px 0;
+    }
+
+    
+    .facilidades__informações {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        width: 75%;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    .facilidades__informações__item{
+        width: 304px;
+    }
+}

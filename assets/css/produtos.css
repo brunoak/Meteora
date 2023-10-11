@@ -85,3 +85,39 @@
     }
 
 }
+
+@media screen and (min-width: 1440px){
+
+    .produtos{
+        margin: 0 auto;
+    }
+    
+    .produtos__titulo{
+        font-size: 32px;
+    }
+
+    .produtos__produto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .produtos__card{
+        width: 350px;
+    }
+
+    .produtos__card_borda {
+        margin-bottom: 0;
+    }
+
+
+}
+
+@media screen and (min-width:1541px ) {
+    .produtos{
+        width:  1162px;
+        margin: 0 auto;
+    }
+}

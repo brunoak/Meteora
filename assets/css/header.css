@@ -38,8 +38,12 @@ nav.cabecalho_menu_mobile{
     background-color: #343A40;
     top: 58px;
     right:0;
-    text-align: right;
+    text-align: start;
     z-index: 1;
+}
+
+nav.cabecalho_menu_mobile ul{
+   padding-left: 2px
 }
 
 nav.cabecalho_menu_mobile.menu-active {
@@ -139,13 +143,13 @@ section.cabecalho_buscar a{
     nav.cabecalho_menu_desktop{
         display: block;
         float: left;
-        padding-left: 20px;
         margin-right: 60px;
     }
 
     nav.cabecalho_menu_desktop ul{
         display: flex;
         gap: 20px;
+        margin-bottom: 0;
     }
 
     nav.cabecalho_menu_desktop ul li a{

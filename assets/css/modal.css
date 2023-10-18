@@ -1,0 +1,38 @@
+dialog{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.modal__header{
+    display: flex;
+    height: 65px;
+    padding: 18px 28px 18px 16px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    background-color: var(--color-black);
+}
+
+.modal__header h4{
+    color: var(--color-offwhite);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.modal__body{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__body__img{
+    margin: 0 auto;
+}
+
+.modal__body__img img{
+    padding: 16px 16px 24px 16px;
+}

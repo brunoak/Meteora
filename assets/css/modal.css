@@ -1,8 +1,16 @@
 dialog{
     width: 100vw;
-    height: 100vh;
     box-sizing: border-box;
     padding: 0;
+    border: none;
+    height: 555px;
+    border-radius: .5em;
+    background: #FFF;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}
+
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .5);
 }
 
 .modal__header{
@@ -15,13 +23,20 @@ dialog{
     background-color: var(--color-black);
 }
 
+.modal__header_tablet{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .modal__header h4{
     color: var(--color-offwhite);
     font-size: 20px;
     font-weight: 500;
     line-height: normal;
     margin-bottom: 0;
-    text-align: justify;
+    text-align: center;
+    width: 211px;
 }
 
 .modal__body{
@@ -35,4 +50,130 @@ dialog{
 
 .modal__body__img img{
     padding: 16px 16px 24px 16px;
+    width: 100%;
+}
+
+.modal__body__produto, .modal__body__descrição{
+    padding: 0 32px 0 32px;
+}
+
+.modal__body__produto h4{
+    color: var(--color-black);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px; /* 143.75% */
+    padding-bottom: 24px;
+}
+
+.modal__body__produto .modal__body__produto_descrição{
+    color: var(--color-black);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px; /* 153.846% */
+}
+
+.modal__body__produto hr{
+    background-color: var(--color-black);
+    opacity:100
+}
+
+.modal__body__produto .modal__body__produto_preço{
+    color:  #212529;
+    font-size: 20px;;
+    font-weight: 500;
+    padding-bottom: 24px;
+}
+
+.modal__body__produto .modal__body__produto_placeholder{
+    color: #ADB5BD;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px; /* 153.846% */
+}
+
+.modal__body__produto .hr, .modal__body__descrição .hr{
+    background-color: #D8D8D8;
+    opacity: .25;
+}
+
+.modal__body__descrição h4{
+    margin-bottom: 16px;
+    color: var(--color-black);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px; /* 153.846% */
+}
+
+.modal__body__descrição__formulario{
+    display: flex;
+    margin-bottom: 23px;
+}
+
+.modal__body__descrição__formulario div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 16px;
+}
+
+.modal__body__descrição__formulario label{
+    color: var(--color-black);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px; /* 153.846% */
+}
+
+.modal__body__descrição .modal__body__descrição__botao{
+    margin-bottom: 1px;
+}
+
+.modal__body__descrição a{
+    text-decoration: none;
+    padding: 9px 16px;
+    color: var(--color-offwhite);
+    background-color: var(--color-roxo);
+    color: var(--color-fill-white, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.457px;
+    margin-top: 16px;
+}
+
+@media screen and (min-width:768px) {
+    dialog{
+        width: 700px;
+        box-sizing: border-box;
+        padding: 0;
+        border: none;
+        border-radius: 0px 0px 4px 4px;
+        background: #FFF;
+    }
+
+    .modal__header_tablet{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .modal__header{
+       justify-content: space-between;
+    }    
+
+    .modal__header h4{
+        width: 100%;
+    }
+
+    .modal__body{
+        display: flex;
+        flex-direction: row;
+    }
+    .modal__body__img{
+        width: 55%;
+    }
+    .modal__body__conteudo_lado_direito_tablet{
+        width: 45%;
+        padding-top: 16px;
+    }
 }

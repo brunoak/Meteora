@@ -140,13 +140,13 @@
 
         <div class="produtos__produto">
 
-            <div class="produtos__card">
+            <div class="produtos__card" id="produtos__card_camiseta">
                 <img src="assets/Mobile/Imagens cards/Card camiseta.png" alt="Camiseta conforto">
                 <div class="produtos__card_borda">
                     <h3 class="produtos__card__titulo">Camiseta Conforto</h3>
                     <p class="produtos__card__descrição">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão.</p>
                     <p class="produtos__card__preço">R$ 70,00</p>
-                    <a class="produtos__card__botão" href="#">Veja mais</a>
+                    <a class="produtos__card__botão" href="#produtos__card_camiseta">Veja mais</a>
                 </div>
             </div>
 
@@ -246,7 +246,9 @@
             <p class="leads__texto">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
             <div class="leads__formulario">
                 <input class="leads__formulario__email" type="email" id="mail" placeholder="Digite seu email" />
-                <a href="#">Enviar</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                   Enviar
+                </button>
             </div>
         </div>
     </section>
@@ -257,30 +259,98 @@
         </p>
     </footer>
 
-    <dialog open>
+    <dialog>
         <header class="modal__header">
-            <img src="assets/Mobile/Ícones/check-circle.svg" alt="">
-            <h4>Confira detalhes sobre o produto</h4>
-            <img src="assets/Mobile/Ícones/bx-x.svg" alt="">
+            <div class="modal__header_tablet">
+                <img src="assets/Mobile/Ícones/check-circle.svg" alt="">
+                <h4>Confira detalhes sobre o produto</h4>
+            </div>
+            <a class="modal__header_close" href="#"><img src="assets/Mobile/Ícones/bx-x.svg" alt=""></a>
         </header>
         
         <section class="modal__body">
             <div class="modal__body__img">
-                <img src="assets/Mobile/Imagens cards/Card_jaqueta_jeans.png" alt="Jaqueta Jeans">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/Tablet/Imagens_Cards/jaquetajeans.png" type="image/png">
+                    <img src="assets/Mobile/Imagens cards/Card_jaqueta_jeans.png" alt="Jaqueta Jeans">
+                </picture>
             </div>
-            <div class="modal__body__produto">
-                <h4>Jaqueta Jeans</h4>
-                <p>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
-                <p>R$ 150,00</p>
-                <p>Vendido e entregue por Riachuelo</p>
+            <div class="modal__body__conteudo_lado_direito_tablet">
+                <div class="modal__body__produto">
+                    <h4>Jaqueta Jeans</h4>
+                    <p class="modal__body__produto_descrição">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+                    <hr>
+                    <p class="modal__body__produto_preço">R$ 150,00</p>
+                    <p class="modal__body__produto_placeholder">Vendido e entregue por Riachuelo</p>
+                    <hr class="hr">
+                </div>
+
+                <div class="modal__body__descrição">
+                    <h4>Cores:</h4>
+                    <form class="modal__body__descrição__formulario">
+                        <div>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Azul Claro</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">OffWhite</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript">Preto</label>
+                        </div>
+                    </form>
+                    <hr class="hr">
+
+                    <h4>Tamanho:</h4>
+                    <form class="modal__body__descrição__formulario">
+                        <div>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">P</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">PP</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript">M</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript">G</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript">GG</label>
+                        </div>
+                    </form>
+
+                    <a class="modal__body__descrição__botao" href="http://">Adicionar a Sacola</a>
+                </div>
             </div>
         </section>            
     </dialog>
-
-
-
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="assets/Mobile/Ícones/check-circle.svg" alt="">
+          <h5 class="modal-title" id="exampleModalLabel">E-mail cadastrado com sucesso!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Em breve você receberá novidades exclusivas da Meteora.
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="menu_hamburguer.js"></script>
+    <script src="modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

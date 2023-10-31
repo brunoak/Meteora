@@ -6,6 +6,7 @@
 @import url(assets/css/leads.css);
 @import url(assets/css/rodape.css);
 @import url(assets/css/modal.css);
+@import url(assets/css/modal_email.css);
 
 :root{
     --font: 'Inter', sans-serif;

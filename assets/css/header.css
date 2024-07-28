@@ -18,7 +18,7 @@ img.cabecalho_menu_logo{
 }
 
 span.cabecalho_menu_img{
-    background-image: url(assets/Mobile/Ícones/menu-aberto-png.png);
+    background-image: url(/assets/Mobile/Ícones/menu-aberto-png.png);
     width: 40px;
     height: 50px;
     display:flex;
